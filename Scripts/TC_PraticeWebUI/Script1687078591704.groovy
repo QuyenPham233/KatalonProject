@@ -1,14 +1,9 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.FormulaEvaluator;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet
-import org.apache.poi.ss.usermodel.Workbook
-import org.apache.poi.ss.util.CellReference
-import org.apache.poi.xssf.usermodel.XSSFWorkbook
+import com.kms.katalon.core.model.FailureHandling
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-import com.kms.katalon.core.util.KeywordUtil
+
 
 'Css value'
 //WebUI.openBrowser('https://docs.katalon.com/docs/maintain/configure-failure-handling-settings-in-katalon-studio')
@@ -33,7 +28,7 @@ import com.kms.katalon.core.util.KeywordUtil
 //Workbook wb = new XSSFWorkbook(file); //or new XSSFWorkbook("/somepath/test.xls")
 //Sheet sheet = wb.getSheetAt(0);
 //FormulaEvaluator evaluator = wb.getCreationHelper().createFormulaEvaluator();
-//// suppose your formula is in A1
+//// suppose your formula is in B1
 //CellReference cellReference = new CellReference("B1");
 //Row row = sheet.getRow(cellReference.getRow());
 //Cell cell = row.getCell(cellReference.getCol());
@@ -41,8 +36,8 @@ import com.kms.katalon.core.util.KeywordUtil
 
 
 'Assert and verify'
-//WebUI.openBrowser('Trello.com')
-//B= WebUI.verifyElementNotVisible(findTestObject('Object Repository/Trello/features'), FailureHandling.OPTIONAL)
-//assert B == false
+WebUI.openBrowser('Trello.com')
+B= WebUI.verifyElementNotVisible(findTestObject('Object Repository/Trello/features'), FailureHandling.OPTIONAL)
+assert B == false
 
 
