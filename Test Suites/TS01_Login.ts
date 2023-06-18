@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>TS01_Login</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>3</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>true</rerunImmediately>
+   <testSuiteGuid>ad3136cf-c3a0-4e56-b627-35239d85b03e</testSuiteGuid>
+   <testCaseLink>
+      <guid>5bff4a21-e000-4057-aa07-ea37ee7a860f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC02_Ex1</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>57ec9fae-3ef5-4b16-8206-849a3aed150e</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Account</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>57ec9fae-3ef5-4b16-8206-849a3aed150e</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Email</value>
+         <variableId>8e266faa-58e6-49f6-b48c-edce1c0c6a06</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>57ec9fae-3ef5-4b16-8206-849a3aed150e</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Password</value>
+         <variableId>89beb34c-cfd3-4588-b83e-2b7ac38c7588</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a976b19e-fd15-4221-9676-b472fd447a47</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC02_Ex2</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>656e1e8d-8d4f-4efd-955d-18929138c2d4</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Account</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>656e1e8d-8d4f-4efd-955d-18929138c2d4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Email</value>
+         <variableId>6d437ec5-96c0-4666-9786-2f480fb1022a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>656e1e8d-8d4f-4efd-955d-18929138c2d4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Password</value>
+         <variableId>4489c633-cf6f-4ae1-94f2-229036f715d5</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

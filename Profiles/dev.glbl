@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>dev</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://intranet.tma.com.vn/'</initValue>
+      <name>intranetURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://tutorialsninja.com/demo/'</initValue>
+      <name>tutorialsninjaURL</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
