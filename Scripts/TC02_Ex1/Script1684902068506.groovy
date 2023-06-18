@@ -18,46 +18,45 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import customKeywordEx.testCustomKeyword as KeyEx
-//login
+
+'Open browser'
 WebUI.openBrowser('')
-
+'Navigate to intranet'
 WebUI.navigateToUrl(GlobalVariable.intranetURL)
-
 //CustomKeywords.'exCustomKey.checkLogin'(findTestObject('Object Repository/Page_Login Intranet/header_Login'))
-
+'Input user name'
 WebUI.setText(findTestObject('Object Repository/Page_Login Intranet/input_Username'), Email)
-
+'Inout password'
 WebUI.setText(findTestObject('Object Repository/Page_Login Intranet/input_Password'), Password)
-
+'Click btt login'
 WebUI.click(findTestObject('Object Repository/Page_Login Intranet/btt_Login'))
-
+'Verify login successfully'
 WebUI.verifyElementVisible(findTestObject('Object Repository/Page_Intranet/icon_Profile'))
-
-//click EC
+'Click Employee Contact'
 WebUI.click(findTestObject('Object Repository/Page_Intranet/icon_EmployeeContact'))
-
-//check success E1
+'E1: Check if tabbar is visible'
 WebUI.verifyElementVisible(findTestObject('Object Repository/Page_EmployeeContact/tabbar_EmployeeContact'))
-
-//Click dropdown add fillter
+'Click dropdown add fillter'
 WebUI.click(findTestObject('Object Repository/Page_EmployeeContact/dropdown_AddFillter'))
-//choose option
+'Choose option BadgeID'
 WebUI.click(findTestObject('Object Repository/Page_EmployeeContact/option_BadgeID'))
-//click button search
+'Click button search'
 WebUI.click(findTestObject('Object Repository/Page_EmployeeContact/btt_Search'))
-//verify fillter baged id appear E2
+'E2: Verify fillter baged id appear'
 WebUI.verifyElementVisible(findTestObject('Object Repository/Page_EmployeeContact/inputField_BadgeID'))
-//verify no record showed E2
+'E2: Verify no record showed'
 WebUI.verifyElementVisible(findTestObject('Object Repository/Page_EmployeeContact/table_NoRecord'))
-//type 'Binh'
+'Type Binh into input field'
 WebUI.sendKeys(findTestObject('Object Repository/Page_EmployeeContact/inputField_FullName'), 'Binh')
-//click search
+'Click button search'
 WebUI.click(findTestObject('Object Repository/Page_EmployeeContact/btt_Search'))
-//show record E3
+'E3: Show record'
 WebUI.verifyElementNotPresent(findTestObject('Object Repository/Page_EmployeeContact/table_NoRecord'), 5)
 String email ='lthanhbinh@tma.com.vn'
-//CustomKeywords.'customKeywordEx.testCustomKeyword.getInfoUsers'(findTestObject('Object Repository/Page_EmployeeContact/table_ResultTable'), null, email)
-//WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Intranet/Activites/abc',['text':'Event']),0)
+'Get 5 random user'
+KeyEx.getInfoUsers(findTestObject('Object Repository/Page_EmployeeContact/table_ResultTable'), 5, null)
+'Return user ID with input Email'
 KeyEx.getInfoUsers(findTestObject('Object Repository/Page_EmployeeContact/table_ResultTable'), null, email)
+'Close browser'
 WebUI.closeBrowser()
-//script/ defn test object
+

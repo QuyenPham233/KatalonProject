@@ -1,9 +1,11 @@
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import org.apache.commons.io.FileUtils
+
 import com.kms.katalon.core.model.FailureHandling
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-
-
 
 'Css value'
 //WebUI.openBrowser('https://docs.katalon.com/docs/maintain/configure-failure-handling-settings-in-katalon-studio')
@@ -28,7 +30,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 //Workbook wb = new XSSFWorkbook(file); //or new XSSFWorkbook("/somepath/test.xls")
 //Sheet sheet = wb.getSheetAt(0);
 //FormulaEvaluator evaluator = wb.getCreationHelper().createFormulaEvaluator();
-//// suppose your formula is in B1
+//// suppose formula is in B1
 //CellReference cellReference = new CellReference("B1");
 //Row row = sheet.getRow(cellReference.getRow());
 //Cell cell = row.getCell(cellReference.getCol());
